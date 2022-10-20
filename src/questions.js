@@ -15,7 +15,7 @@ const managerQuestions = [
     message: "Enter your email: ",
   },
   {
-    name: "office_number",
+    name: "officeNumber",
     type: "input",
     message: "Enter your office number: ",
   },
@@ -67,13 +67,13 @@ const internQuestions = [
   },
 ];
 
-const teamQuestions = [
+const teamBuild = [
   {
     name: "addMember",
     type: "list",
     message: "Which employee type would you like to add?",
-    choices: ["Engineer", "Intern", "Finished"],
-    default: "Finished",
+    choices: ["Engineer", "Intern", "Done"],
+    default: "Done",
   },
 ];
 
@@ -81,5 +81,5 @@ module.exports = {
   managerQuestions,
   engineerQuestions,
   internQuestions,
-  teamQuestions,
+  teamBuild,
 };
