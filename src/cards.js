@@ -25,7 +25,7 @@ const generateTeam = (team) => {
                                     <th>Email: <a href="mailto:${eng.getEmail()}">${eng.getEmail()}</a></th>
                                 </tr>
                                 <tr>
-                                    <th>GitHub: <a href="https://www.github.com/${eng.getGitHub()}">${eng.getGitHub()}</a></th>
+                                    <th>GitHub: <a href="https://www.github.com/${eng.getGitHub()}" target="_blank" rel="noopener noreferrer">${eng.getGitHub()}</a></th>
                                 </tr>
                             </thead>
                         </table>
