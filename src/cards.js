@@ -43,7 +43,7 @@ const generateTeam = (team) => {
                         ${intern.getName()}
                     </p>
                     <p class="card-header-title has-background-info has-text-white is-centered">
-                        ${intern.getRole()} <i class="fa-solid fa-graduation-cap"></i>
+                        ${intern.getRole()} <i class="fa-solid fa-graduation-cap ml-2"></i>
                     </p>
                 </header>
                 <div class="card-content has-background-white-ter">
@@ -75,7 +75,7 @@ const generateTeam = (team) => {
                         ${man.getName()}
                     </p>
                     <p class="card-header-title has-background-info has-text-white is-centered">
-                        ${man.getRole()} <i class="fa-solid fa-graduation-cap"></i>
+                        ${man.getRole()} <i class="fa-brands fa-apple ml-2"></i>
                     </p>
                 </header>
                 <div class="card-content has-background-white-ter">
