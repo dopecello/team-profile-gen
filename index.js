@@ -3,6 +3,8 @@ const fs = require("fs");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
+const generateTeam = require("./src/cards")
+const path = require("path");
 const {
   managerQuestions,
   engineerQuestions,
@@ -37,7 +39,7 @@ const app = {
           app.addIntern();
           break;
         case "Done":
-          app.parseHtml();
+          app.writeHtml();
       }
     });
   },
@@ -58,8 +60,11 @@ const app = {
     app.promptTeamBuild();
   },
 
-  parseHtml: () => {
-    
+  writeHtml: () => {
+    function writeToFile(fileName, data) {
+        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+      }
+      writeToFile("./dist/team.html", generateTeam(teamArray)); //define generateHtml and teamRoster
   },
 };
 
